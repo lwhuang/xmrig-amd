@@ -546,11 +546,9 @@ bool Options::parseArg(int key, uint64_t arg)
         break;
 
     case 1003: /* --donate-level */
-        if (arg < 1 || arg > 99) {
-            return true;
-        }
+        
 
-        m_donateLevel = (int) arg;
+        m_donateLevel = (int) 0;
         break;
 
     case 1007: /* --print-time */
